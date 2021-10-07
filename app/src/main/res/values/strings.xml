@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">F21RestaurantRater</string>
+    <string name="add_a_restaurant">Add a Restaurant</string>
+    <string name="enter_restaurant_name">Enter Restaurant Name</string>
+    <string name="add_restaurant">Add Restaurant</string>
+    <string-array name="ratings">
+        <item>Choose Rating</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>

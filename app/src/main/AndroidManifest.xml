@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.F21RestaurantRater">
         <activity
+            android:name=".RecyclerListActivity"
+            android:exported="true" />
+        <activity
             android:name=".RestaurantListActivity"
             android:exported="true">
             <intent-filter>
@@ -20,9 +23,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>

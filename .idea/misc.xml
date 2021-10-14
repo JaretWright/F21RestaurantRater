@@ -3,9 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/drawable/background.xml" value="0.3828125" />
+        <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/drawable/background_selected.xml" value="0.3828125" />
+        <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/drawable/grid_item_selector.xml" value="0.3537037037037037" />
+        <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/layout/activity_grid_recycler.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/layout/activity_recycler_list.xml" value="0.33" />
         <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/layout/activity_restaurant_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/layout/item_grid_restaurant.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/layout/item_restaurant.xml" value="0.36666666666666664" />
       </map>
     </option>

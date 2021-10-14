@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
                 //1.  get an ID from Firestore
                 val db = FirebaseFirestore.getInstance().collection("restaurants")
                 restaurant.id = db.document().id
+                Log.i("DB_Response","${restaurant.id}")
 
                 //2. store the restaurant as a document
                 db.document(restaurant.id!!).set(restaurant)
@@ -37,9 +38,13 @@ class MainActivity : AppCompatActivity() {
                         binding.restaurantEditText.setText("")
                         binding.spinner.setSelection(0)
                     }
-                    .addOnFailureListener {
+                    .addOnFailureListener {exception ->
                         Toast.makeText(this, "DB Error", Toast.LENGTH_LONG).show()
-                        Log.i("DB Message", it.localizedMessage)
+                        var message = exception.localizedMessage
+                        message.let{
+                            Log.i("DB Message", message)
+                        }
+
                     }
             }
             else

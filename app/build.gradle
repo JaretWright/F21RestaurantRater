@@ -50,4 +50,7 @@ dependencies {
     //even if an activity is closed (i.e. rotating the device).
     implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
     implementation 'androidx.fragment:fragment-ktx:1.3.6'
+
+    //This is for the recycler view
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
 }

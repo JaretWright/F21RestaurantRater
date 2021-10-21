@@ -9,7 +9,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class GridAdapter(val context : Context,
-                  val restaurants : List<Restaurant>)   : RecyclerView.Adapter<GridAdapter.RestaurantViewHolder>(){
+                  val restaurants : List<Restaurant>,
+                    val itemListener: RestaurantItemListener)   : RecyclerView.Adapter<GridAdapter.RestaurantViewHolder>(){
 
     /**
      * This class is used to allow us to access the item_restaurant.xml objects
@@ -34,16 +35,26 @@ class GridAdapter(val context : Context,
      */
     override fun onBindViewHolder(viewHolder: RestaurantViewHolder, position: Int) {
         val restaurant = restaurants[position]
-//        with (viewHolder){
-//            nameTextView.text = restaurant.name
-//            ratingBar.rating = restaurant.rating!!.toFloat()
-//        }
-        viewHolder.nameTextView.text = restaurant.name
-        viewHolder.ratingBar.rating = restaurant.rating!!.toFloat()
+        with (viewHolder){
+            nameTextView.text = restaurant.name
+            ratingBar.rating = restaurant.rating!!.toFloat()
+            itemView.setOnClickListener {
+                itemListener.restaurantSelected(restaurant)
+        }
+//        viewHolder.nameTextView.text = restaurant.name
+//        viewHolder.ratingBar.rating = restaurant.rating!!.toFloat()
+//
+//        viewHolder.itemView.setOnClickListener {
+//            itemListener.restaurantSelected(restaurant)
+        }
     }
 
     override fun getItemCount(): Int {
         return restaurants.size
+    }
+
+    interface RestaurantItemListener {
+        fun restaurantSelected( restaurant : Restaurant)
     }
 
 }

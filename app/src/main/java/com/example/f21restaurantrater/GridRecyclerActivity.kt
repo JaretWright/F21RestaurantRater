@@ -1,11 +1,12 @@
 package com.example.f21restaurantrater
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
 import com.example.f21restaurantrater.databinding.ActivityGridRecyclerBinding
 
-class GridRecyclerActivity  : AppCompatActivity() {
+class GridRecyclerActivity  : AppCompatActivity(), GridAdapter.RestaurantItemListener {
     private lateinit var binding : ActivityGridRecyclerBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,8 +17,19 @@ class GridRecyclerActivity  : AppCompatActivity() {
         //get data from the view model
         val viewModel : RestaurantListViewModel by viewModels()
         viewModel.getRestaurants().observe( this, { restaurants ->
-            var gridAdapter = GridAdapter(this, restaurants)
+            var gridAdapter = GridAdapter(this, restaurants, this)
             binding.gridRecyclerView.adapter = gridAdapter
         })
     }
+
+    /**
+     * When a restaurant is selected, pass the Restaurant information to the comment activity
+     */
+    override fun restaurantSelected(restaurant: Restaurant) {
+        val intent = Intent(this, CommentActivity::class.java)
+        intent.putExtra("restaurantID", restaurant.id)
+        intent.putExtra("restaurantName", restaurant.name)
+        startActivity(intent)
+    }
+
 }

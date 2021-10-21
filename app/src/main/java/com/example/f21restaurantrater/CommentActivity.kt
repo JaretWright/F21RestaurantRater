@@ -12,6 +12,6 @@ class CommentActivity : AppCompatActivity() {
         binding = ActivityCommentBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
+        binding.restaurantNameTextView.text = intent.getStringExtra("restaurantName")
     }
 }

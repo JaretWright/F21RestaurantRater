@@ -12,7 +12,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <TextView
-        android:id="@+id/bodyTextView"
+        android:id="@+id/commentTextView"
         android:layout_width="@dimen/name_width"
         android:text="I *LOVED* the spaghetti"
         android:layout_height="wrap_content" />

@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
                     .addOnFailureListener {exception ->
                         Toast.makeText(this, "DB Error", Toast.LENGTH_LONG).show()
                         var message = exception.localizedMessage
-                        message.let{
+                        message?.let{
                             Log.i("DB Message", message)
                         }
 

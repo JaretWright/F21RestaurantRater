@@ -3,4 +3,6 @@
     <dimen name="standard_margin">10dp</dimen>
     <dimen name="heading_font_size">28sp</dimen>
     <dimen name="regular_font_size">20sp</dimen>
+    <dimen name="grid_padding">5dp</dimen>
+    <dimen name="name_width">250dp</dimen>
 </resources>

@@ -40,12 +40,7 @@ class GridAdapter(val context : Context,
             ratingBar.rating = restaurant.rating!!.toFloat()
             itemView.setOnClickListener {
                 itemListener.restaurantSelected(restaurant)
-        }
-//        viewHolder.nameTextView.text = restaurant.name
-//        viewHolder.ratingBar.rating = restaurant.rating!!.toFloat()
-//
-//        viewHolder.itemView.setOnClickListener {
-//            itemListener.restaurantSelected(restaurant)
+            }
         }
     }
 

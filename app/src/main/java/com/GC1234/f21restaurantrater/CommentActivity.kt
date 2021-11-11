@@ -1,11 +1,11 @@
-package com.example.f21restaurantrater
+package com.GC1234.f21restaurantrater
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.f21restaurantrater.databinding.ActivityCommentBinding
+import com.GC1234.f21restaurantrater.databinding.ActivityCommentBinding
 import com.google.firebase.firestore.FirebaseFirestore
 
 class CommentActivity : AppCompatActivity() {
@@ -54,6 +54,10 @@ class CommentActivity : AppCompatActivity() {
                 var recyclerAdapter = CommentViewAdapter(this, comments)
                 binding.commentsRecyclerView.adapter = recyclerAdapter
             })
+        }
+
+        binding.backFAB.setOnClickListener {
+            startActivity(Intent(this, GridRecyclerActivity::class.java))
         }
     }
 }

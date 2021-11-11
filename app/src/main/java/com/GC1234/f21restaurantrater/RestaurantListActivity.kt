@@ -1,12 +1,10 @@
-package com.example.f21restaurantrater
+package com.GC1234.f21restaurantrater
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.TextView
 import androidx.activity.viewModels
-import com.example.f21restaurantrater.databinding.ActivityRestaurantListBinding
-import com.google.firebase.firestore.FirebaseFirestore
+import com.GC1234.f21restaurantrater.databinding.ActivityRestaurantListBinding
 
 class RestaurantListActivity : AppCompatActivity() {
     private lateinit var binding : ActivityRestaurantListBinding

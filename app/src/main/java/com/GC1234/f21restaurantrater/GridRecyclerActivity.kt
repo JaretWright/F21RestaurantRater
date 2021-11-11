@@ -1,10 +1,10 @@
-package com.example.f21restaurantrater
+package com.GC1234.f21restaurantrater
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
-import com.example.f21restaurantrater.databinding.ActivityGridRecyclerBinding
+import com.GC1234.f21restaurantrater.databinding.ActivityGridRecyclerBinding
 
 class GridRecyclerActivity  : AppCompatActivity(), GridAdapter.RestaurantItemListener {
     private lateinit var binding : ActivityGridRecyclerBinding
@@ -20,6 +20,10 @@ class GridRecyclerActivity  : AppCompatActivity(), GridAdapter.RestaurantItemLis
             var gridAdapter = GridAdapter(this, restaurants, this)
             binding.gridRecyclerView.adapter = gridAdapter
         })
+
+        binding.addRestaurantFAB.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+        }
     }
 
     /**

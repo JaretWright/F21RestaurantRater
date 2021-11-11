@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.f21restaurantrater">
+    package="com.GC1234.f21restaurantrater">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.F21RestaurantRater">
         <activity
-            android:name=".SiginActivity"
+            android:name="com.GC1234.f21restaurantrater.SiginActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,21 +19,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CommentActivity"
+            android:name="com.GC1234.f21restaurantrater.CommentActivity"
             android:exported="true" />
         <activity
-            android:name=".GridRecyclerActivity"
+            android:name="com.GC1234.f21restaurantrater.GridRecyclerActivity"
             android:exported="true">
 
         </activity>
         <activity
-            android:name=".RecyclerListActivity"
+            android:name="com.GC1234.f21restaurantrater.RecyclerListActivity"
             android:exported="true" />
         <activity
-            android:name=".RestaurantListActivity"
+            android:name="com.GC1234.f21restaurantrater.RestaurantListActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.GC1234.f21restaurantrater.MainActivity"
             android:exported="true" />
     </application>
 

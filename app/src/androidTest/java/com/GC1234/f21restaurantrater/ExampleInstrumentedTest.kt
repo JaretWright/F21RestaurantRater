@@ -1,4 +1,4 @@
-package com.example.f21restaurantrater
+package com.GC1234.f21restaurantrater
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

@@ -1,4 +1,4 @@
-package com.example.f21restaurantrater
+package com.GC1234.f21restaurantrater
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -50,7 +50,7 @@ class SiginActivity : AppCompatActivity() {
             // sign-in flow using the back button. Otherwise check
             // response.getError().getErrorCode() and handle the error.
             // ...
-            Toast.makeText(this, "Sigin Failed", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Signin Failed", Toast.LENGTH_LONG).show()
             startActivity(Intent(this, SiginActivity::class.java))
         }
     }

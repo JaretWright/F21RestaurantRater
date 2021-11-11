@@ -1,10 +1,11 @@
-package com.example.f21restaurantrater
+package com.GC1234.f21restaurantrater
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import com.example.f21restaurantrater.databinding.ActivityMainBinding
+import com.GC1234.f21restaurantrater.databinding.ActivityMainBinding
 import com.google.firebase.firestore.FirebaseFirestore
 
 class MainActivity : AppCompatActivity() {
@@ -37,6 +38,7 @@ class MainActivity : AppCompatActivity() {
                         Toast.makeText(this, "Restaurant Added", Toast.LENGTH_LONG).show()
                         binding.restaurantEditText.setText("")
                         binding.spinner.setSelection(0)
+                        startActivity(Intent(this, GridRecyclerActivity::class.java))
                     }
                     .addOnFailureListener {exception ->
                         Toast.makeText(this, "DB Error", Toast.LENGTH_LONG).show()

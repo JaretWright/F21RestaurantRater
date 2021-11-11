@@ -1,4 +1,4 @@
-package com.example.f21restaurantrater
+package com.GC1234.f21restaurantrater
 
 import android.content.Context
 import android.view.LayoutInflater

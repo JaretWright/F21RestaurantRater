@@ -1,9 +1,9 @@
-package com.example.f21restaurantrater
+package com.GC1234.f21restaurantrater
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
-import com.example.f21restaurantrater.databinding.ActivityRecyclerListBinding
+import com.GC1234.f21restaurantrater.databinding.ActivityRecyclerListBinding
 
 class RecyclerListActivity : AppCompatActivity() {
     private lateinit var binding : ActivityRecyclerListBinding

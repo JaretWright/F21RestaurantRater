@@ -7,6 +7,8 @@
     <string name="enter_your_name">Enter your name</string>
     <string name="enter_comment">Enter Comment</string>
     <string name="save">Save</string>
+    <string name="add_a_new_restaurant">Add a new Restaurant</string>
+    <string name="view_restaurants">View Restaurants</string>
     <string-array name="ratings">
         <item>Choose Rating</item>
         <item>1</item>

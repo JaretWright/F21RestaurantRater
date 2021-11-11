@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_add"
+        android:icon="@drawable/add_restaurant_icon"
+        android:title="@string/add_a_new_restaurant"
+        app:showAsAction="ifRoom"
+        />
+    <item android:id="@+id/action_list"
+        android:icon="@drawable/list_icon"
+        android:title="@string/view_restaurants"
+        app:showAsAction="ifRoom"
+        />
+    <item android:id="@+id/action_profile"
+        android:icon="@drawable/profile_icon"
+        android:title="View Profile"
+        app:showAsAction="ifRoom"
+        />
+
+</menu>

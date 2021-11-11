@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Toast
 import com.GC1234.f21restaurantrater.databinding.ActivityMainBinding
 import com.google.firebase.firestore.FirebaseFirestore
@@ -54,5 +56,36 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this,"Restaurant name and rating required", Toast.LENGTH_LONG).show()
             }
         }
+
+        setSupportActionBar(binding.mainToolBar.toolbar)
+    }
+
+    /**
+     * Add the menu to the toolbar
+     */
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_menu, menu)
+        return true
+    }
+
+    /**
+     * This method connects an action with the icon selected from the menu
+     */
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId){
+            R.id.action_add ->{
+//                startActivity(Intent(applicationContext, MainActivity::class.java))
+                return true
+            }
+            R.id.action_list ->{
+                startActivity(Intent(applicationContext, GridRecyclerActivity::class.java))
+                return true
+            }
+            R.id.action_profile -> {
+                startActivity(Intent(applicationContext, ProfileActivity::class.java))
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 }

@@ -23,10 +23,6 @@ class GridRecyclerActivity  : AppCompatActivity(), GridAdapter.RestaurantItemLis
             binding.gridRecyclerView.adapter = gridAdapter
         })
 
-        binding.addRestaurantFAB.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
-        }
-
         setSupportActionBar(binding.mainToolBar.toolbar)
     }
 
@@ -38,6 +34,9 @@ class GridRecyclerActivity  : AppCompatActivity(), GridAdapter.RestaurantItemLis
         return true
     }
 
+    /**
+     * This method connects an action with the icon selected from the menu
+     */
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId){
             R.id.action_add ->{
@@ -49,12 +48,12 @@ class GridRecyclerActivity  : AppCompatActivity(), GridAdapter.RestaurantItemLis
                 return true
             }
             R.id.action_profile -> {
-
+                startActivity(Intent(applicationContext, ProfileActivity::class.java))
+                return true
             }
         }
         return super.onOptionsItemSelected(item)
     }
-
 
     /**
      * When a restaurant is selected, pass the Restaurant information to the comment activity

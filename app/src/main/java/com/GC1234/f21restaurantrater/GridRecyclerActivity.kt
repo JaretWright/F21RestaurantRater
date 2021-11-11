@@ -3,6 +3,8 @@ package com.GC1234.f21restaurantrater
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.activity.viewModels
 import com.GC1234.f21restaurantrater.databinding.ActivityGridRecyclerBinding
 
@@ -24,7 +26,35 @@ class GridRecyclerActivity  : AppCompatActivity(), GridAdapter.RestaurantItemLis
         binding.addRestaurantFAB.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
         }
+
+        setSupportActionBar(binding.mainToolBar.toolbar)
     }
+
+    /**
+     * Add the menu to the toolbar
+     */
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId){
+            R.id.action_add ->{
+                startActivity(Intent(applicationContext, MainActivity::class.java))
+                return true
+            }
+            R.id.action_list ->{
+//                startActivity(Intent(applicationContext, GridRecyclerActivity::class.java))
+                return true
+            }
+            R.id.action_profile -> {
+
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
 
     /**
      * When a restaurant is selected, pass the Restaurant information to the comment activity

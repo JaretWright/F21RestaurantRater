@@ -13,7 +13,7 @@
         />
     <item android:id="@+id/action_profile"
         android:icon="@drawable/profile_icon"
-        android:title="View Profile"
+        android:title="@string/view_profile"
         app:showAsAction="ifRoom"
         />
 

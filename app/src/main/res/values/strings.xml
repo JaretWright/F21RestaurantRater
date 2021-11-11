@@ -9,6 +9,7 @@
     <string name="save">Save</string>
     <string name="add_a_new_restaurant">Add a new Restaurant</string>
     <string name="view_restaurants">View Restaurants</string>
+    <string name="view_profile">View Profile</string>
     <string-array name="ratings">
         <item>Choose Rating</item>
         <item>1</item>

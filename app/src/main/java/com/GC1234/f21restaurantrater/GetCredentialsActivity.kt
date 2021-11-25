@@ -50,15 +50,20 @@ class GetCredentialsActivity : AppCompatActivity() {
      * This method will check to see if an email already exists in the Firebase.auth system
      */
     private fun checkIfUserExists(email : String){
+        var password = binding.passwordEditText.text.toString()
         auth.fetchSignInMethodsForEmail(email)
             .addOnCompleteListener { task ->
                 task.result.signInMethods?.isEmpty().let { newUser ->
                     if (newUser!!) {
                         Log.i("DB_Response", "$email is a new user")
                         binding.userNameTextInputLayout.visibility = View.VISIBLE
+                        if (password.isNotEmpty())
+                            createNewUser(email, password)
+                        else
+                            Toast.makeText(this, "Enter a password",Toast.LENGTH_LONG).show()
+
                     } else {
                         Log.i("DB_Response", "$email is an existing user")
-                        var password = binding.passwordEditText.text.toString()
 
                         //if the user's email is found AND password is not empty, attempt to login
                         if (password.isNotEmpty()) {
@@ -67,6 +72,23 @@ class GetCredentialsActivity : AppCompatActivity() {
                     }
                 }
             }
+    }
+
+    private fun createNewUser(email: String, password: String) {
+        auth.createUserWithEmailAndPassword(email, password)
+            .addOnCompleteListener(this) { task ->
+                if (task.isSuccessful) {
+                    // Sign in success, update UI with the signed-in user's information
+                    Log.i("DB_Response", "$email - createUserWithEmail:success")
+                    startActivity(Intent(this, ProfileActivity::class.java))
+                } else {
+                    // If sign in fails, display a message to the user.
+                    Log.i("DB_Response", "createUserWithEmail:failure", task.exception)
+                    Toast.makeText(baseContext, "Authentication failed.",
+                        Toast.LENGTH_SHORT).show()
+                }
+            }
+
     }
 
 

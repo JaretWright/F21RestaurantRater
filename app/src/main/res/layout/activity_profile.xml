@@ -24,7 +24,8 @@
         android:textSize="@dimen/heading_font_size"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainToolBar" />
+        app:layout_constraintTop_toBottomOf="@+id/mainToolBar"
+        />
 
     <TextView
         android:id="@+id/emailTextView"
@@ -35,11 +36,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userNameTextView" />
 
+    <ImageButton
+        android:id="@+id/cameraButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:foregroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailTextView"
+        app:srcCompat="@drawable/ic_baseline_photo_camera_24" />
+
+    <ImageView
+        android:id="@+id/avatarImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/termsTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailTextView"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
     <TextView
         android:id="@+id/termsTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:maxLines="20"
+        android:maxLines="10"
         android:scrollbars="vertical"
         android:text="@string/terms"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -57,6 +80,8 @@
         android:layout_margin="@dimen/standard_margin"
         app:srcCompat="@drawable/ic_baseline_exit_to_app_24"
         android:focusable="true" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

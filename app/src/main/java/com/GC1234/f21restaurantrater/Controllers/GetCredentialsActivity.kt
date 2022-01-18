@@ -1,4 +1,4 @@
-package com.GC1234.f21restaurantrater
+package com.GC1234.f21restaurantrater.Controllers
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
+import com.GC1234.f21restaurantrater.GridRecyclerActivity
+import com.GC1234.f21restaurantrater.ProfileActivity
 import com.GC1234.f21restaurantrater.databinding.ActivityGetCredentialsBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth

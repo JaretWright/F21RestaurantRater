@@ -1,4 +1,4 @@
-package com.GC1234.f21restaurantrater
+package com.GC1234.f21restaurantrater.Controllers
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
+import com.GC1234.f21restaurantrater.*
 import com.GC1234.f21restaurantrater.databinding.ActivityCommentBinding
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -14,6 +15,7 @@ class CommentActivity : AppCompatActivity() {
     private lateinit var binding : ActivityCommentBinding
     private lateinit var viewModel : CommentViewModel
     private lateinit var viewModelFactory : CommentViewModelFactory
+    private lateinit var comment : Comment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,6 +39,8 @@ class CommentActivity : AppCompatActivity() {
 
                 restaurantID?.let{
                     val newComment = Comment(id,userName,commentBody,restaurantID)
+                    comment = newComment
+
                     db.document().set(newComment)
                         .addOnSuccessListener { Toast.makeText(this,"Added to DB", Toast.LENGTH_LONG).show() }
                         .addOnFailureListener { Toast.makeText(this,"Failed to add comment", Toast.LENGTH_LONG).show() }
@@ -60,7 +64,9 @@ class CommentActivity : AppCompatActivity() {
 
         binding.locationFAB.setOnClickListener {
             val intent = Intent(this, MapsActivity::class.java)
+
             intent.putExtra("restaurantName",binding.restaurantNameTextView.text.toString())
+            intent.putExtra("commentObject", comment)
             startActivity(intent)
         }
         setSupportActionBar(binding.mainToolBar.toolbar)

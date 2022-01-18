@@ -42,6 +42,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarker
      setContentView(binding.root)
 
         binding.addressEditText.setText(intent.getStringExtra("restaurantName"))
+        var comment = intent.getParcelableExtra<Comment>("commentObject")
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         val mapFragment = supportFragmentManager

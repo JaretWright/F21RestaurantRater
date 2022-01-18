@@ -3,6 +3,7 @@ package com.GC1234.f21restaurantrater
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.GC1234.f21restaurantrater.Controllers.GetCredentialsActivity
 import com.GC1234.f21restaurantrater.databinding.ActivityStyledSignInBinding
 
 class StyledSignInActivity : AppCompatActivity() {

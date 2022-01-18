@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.activity.viewModels
+import com.GC1234.f21restaurantrater.Controllers.CommentActivity
 import com.GC1234.f21restaurantrater.databinding.ActivityGridRecyclerBinding
 
 class GridRecyclerActivity  : AppCompatActivity(), GridAdapter.RestaurantItemListener {

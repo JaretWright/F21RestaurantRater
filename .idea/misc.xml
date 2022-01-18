@@ -3,10 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
         <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/drawable/back_arrow.xml" value="0.3828125" />
         <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/drawable/background.xml" value="0.3828125" />
         <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/drawable/background_selected.xml" value="0.3828125" />
         <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/drawable/grid_item_selector.xml" value="0.3537037037037037" />
+        <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/drawable/ic_baseline_photo_camera_24.xml" value="0.3828125" />
+        <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
+        <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/drawable/list_icon.xml" value="0.3828125" />
+        <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/drawable/profile_icon.xml" value="0.3769230769230769" />
         <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/layout/activity_comment.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/layout/activity_get_credentials.xml" value="0.34791666666666665" />
         <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/layout/activity_grid_recycler.xml" value="0.36666666666666664" />
@@ -15,12 +20,14 @@
         <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/layout/activity_profile.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/layout/activity_recycler_list.xml" value="0.33" />
         <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/layout/activity_restaurant_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/layout/activity_sigin.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/layout/activity_styled_sign_in.xml" value="0.3619791666666667" />
         <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/layout/item_comment.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/layout/item_grid_restaurant.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/layout/item_restaurant.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/layout/toolbar_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/menu/main_menu.xml" value="0.5" />
+        <entry key="..\:/Users/jwright/AndroidStudioProjects/F21RestaurantRater/app/src/main/res/xml/file_path.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>
